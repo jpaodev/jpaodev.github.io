@@ -15,7 +15,8 @@ layout: default
             <h2><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h2>
           </div>  
       
-      <a href="{{ site.baseurl }}{{ post.url }}" class="read-more">Read article..</a>
+      <!--<a href="{{ site.baseurl }}{{ post.url }}" class="read-more">Read article..</a>-->
+      <p>Written on: {{ post.date | date: "%B %e, %Y" }}</p>
     </article>
   {% endfor %}
 </div>
