@@ -11,6 +11,7 @@ The sources might change over time, in case I find another good resource to shar
 
 ## Book section
 
+
 ### Goalkicker.com
 
 I really like the overall concept of Goalkicker. The site offers books for a big selection of programming languages and is based on the "donate if you like the content" concept, which is especially appealing for students.
@@ -18,6 +19,7 @@ I really like the overall concept of Goalkicker. The site offers books for a big
 The books offer tips and tricks for the language of your choice and explain certain scenarios by using code snippets.
 
 Link: https://goalkicker.com/CBook/
+
 
 
 ### The ANSI C programming language
@@ -31,7 +33,10 @@ I recommend this book, because of the many examples of clean code. Trying to und
 Link: https://www.amazon.com/Programming-Language-2nd-Brian-Kernighan/dp/0131103628
 (Amazon link, make sure to check your university library or sth. else for a free ebook version!)
 
+---
+
 ## Tutorial Section
+
 
 ### Tutorialspoint
 
@@ -40,6 +45,8 @@ Even though the tutorialspoint website looks kind of outdated, considering the d
 Tutorialspoint contains a decent structured overview of all the required topics, and also offers a self-check-exam, in case you want to test your knowledge.
 
 Link: https://www.tutorialspoint.com/cprogramming/index.htm
+
+
 
 ### GeeksForGeeks
 
@@ -57,7 +64,10 @@ The page is also very useful, in case you want to perform more research regardin
 
 Link: https://www.geeksforgeeks.org/c-programming-language/
 
+---
+
 ## Interactive Section
+
 
 ### Sololearn
 
@@ -73,6 +83,8 @@ The ads pop up quite often, however I think the app is still pretty decent, espe
 
 Link: https://www.sololearn.com/home
 
+
+
 ### CodeWars
 
 CodeWars is a decent platform, which provides programming challenges. Challenges are grouped by a level, the higher you get, the more complexity comes with a challenge.
@@ -83,7 +95,10 @@ What I really like about the platform is, that after submitting your answer, you
 
 Link: https://codewars.com
 
+---
+
 ## Video section
+
 
 ### Jacob Sorber
 
@@ -96,6 +111,8 @@ By watching his videos, I learned how to write more elegant code and what to do 
 
 Channel Link: https://youtube.com/c/JacobSorber
 
+
+
 ### Neso Academy
 
 Neso Academy is an awesome channel. The videos explain idioms in a decent and modern way.
@@ -105,6 +122,8 @@ Containing quizes and challenges for yourself in general, Neso Academy tries to 
 Neso Academy offers a decent playlist for C programming videos, which I watched many videos from myself and recommended to other students: https://youtube.com/playlist?list=PLBlnK6fEyqRggZZgYpPMUxdY1CYkZtARR
 
 Channel Link: https://youtube.com/c/nesoacademy
+
+
 
 ### Single Videos
 
@@ -127,6 +146,7 @@ freeCodeCamp offers in-depth programming tutorials, which are also suited for be
 
 Link: https://youtu.be/KJgsSFOSQv0
 
+---
 
 ## Conclusion
 
