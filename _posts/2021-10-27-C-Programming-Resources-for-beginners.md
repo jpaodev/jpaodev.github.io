@@ -1,5 +1,3 @@
-# C beginner learning resources
-
 Since I occassionally see people asking for C learning resources on Twitter and co. and also help out other students regarding that matter, I thought sharing my favourite sources here, might be useful for some people.
 
 The sources are going to be divided into different sections:
@@ -52,7 +50,7 @@ The website is divided into multiple subcategories, which contain articles about
 Using this website, you are going to learn many important concepts, by thinking about the solution and reading the explanation of each approach.
 
 <p align="center">
-  <img src="../images/C_GekksForGeeks.png" />
+  <img src="../images/C_GeeksForGeeks.png" />
 </p>
 
 The page is also very useful, in case you want to perform more research regarding a specific matter. As mentioned before, a sub category like "Pointers" contains multiple articles about concepts like "double pointers", which play a key role when building applications in C.
