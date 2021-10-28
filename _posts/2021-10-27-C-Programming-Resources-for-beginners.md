@@ -18,7 +18,7 @@ I really like the overall concept of Goalkicker. The site offers books for a big
 
 The books offer tips and tricks for the language of your choice and explain certain scenarios by using code snippets.
 
-Link: https://goalkicker.com/CBook/
+Link: ![https://goalkicker.com/CBook/](https://goalkicker.com/CBook/)
 
 
 
@@ -30,7 +30,7 @@ The book is very old-school, however contains the most important concepts and ex
 
 I recommend this book, because of the many examples of clean code. Trying to understand the many concepts there, is definitely going to help you out, while learning C.
 
-Link: https://www.amazon.com/Programming-Language-2nd-Brian-Kernighan/dp/0131103628
+Link: ![https://www.amazon.com/Programming-Language-2nd-Brian-Kernighan/dp/0131103628](https://www.amazon.com/Programming-Language-2nd-Brian-Kernighan/dp/0131103628)
 (Amazon link, make sure to check your university library or sth. else for a free ebook version!)
 
 ---
@@ -44,7 +44,7 @@ Even though the tutorialspoint website looks kind of outdated, considering the d
 
 Tutorialspoint contains a decent structured overview of all the required topics, and also offers a self-check-exam, in case you want to test your knowledge.
 
-Link: https://www.tutorialspoint.com/cprogramming/index.htm
+Link: ![https://www.tutorialspoint.com/cprogramming/index.htm](https://www.tutorialspoint.com/cprogramming/index.htm)
 
 
 
@@ -62,7 +62,7 @@ Using this website, you are going to learn many important concepts, by thinking 
 
 The page is also very useful, in case you want to perform more research regarding a specific matter. As mentioned before, a sub category like "Pointers" contains multiple articles about concepts like "double pointers", which play a key role when building applications in C.
 
-Link: https://www.geeksforgeeks.org/c-programming-language/
+Link: ![https://www.geeksforgeeks.org/c-programming-language/](https://www.geeksforgeeks.org/c-programming-language/)
 
 ---
 
@@ -81,7 +81,7 @@ Sololearn is my favourite way to learn about programming languages up to today, 
 
 The ads pop up quite often, however I think the app is still pretty decent, especially if you're not in reach of a computer, and still want to train your programming knowledge on the go.
 
-Link: https://www.sololearn.com/home
+Link: ![https://www.sololearn.com/home](https://www.sololearn.com/home)
 
 
 
@@ -93,7 +93,7 @@ You can sign up with your friends and stay updated on their current progress - t
 
 What I really like about the platform is, that after submitting your answer, you can compare it with the approaches from other people. This way you learn new and more elegant solutions for certain problem situations and also train your problem-solving skills.
 
-Link: https://codewars.com
+Link: ![https://codewars.com](https://codewars.com)
 
 ---
 
@@ -109,7 +109,7 @@ He talks about C programming concepts in his videos and tries to explain how thi
 By watching his videos, I learned how to write more elegant code and what to do vs. what not to do when building a C application.
 
 
-Channel Link: https://youtube.com/c/JacobSorber
+Channel Link: ![https://youtube.com/c/JacobSorber](https://youtube.com/c/JacobSorber)
 
 
 
@@ -119,9 +119,9 @@ Neso Academy is an awesome channel. The videos explain idioms in a decent and mo
 
 Containing quizes and challenges for yourself in general, Neso Academy tries to make you develop solution-solving approaches on your own, while helping you out.
 
-Neso Academy offers a decent playlist for C programming videos, which I watched many videos from myself and recommended to other students: https://youtube.com/playlist?list=PLBlnK6fEyqRggZZgYpPMUxdY1CYkZtARR
+Neso Academy offers a decent playlist for C programming videos, which I watched many videos from myself and recommended to other students: ![https://youtube.com/playlist?list=PLBlnK6fEyqRggZZgYpPMUxdY1CYkZtARR](https://youtube.com/playlist?list=PLBlnK6fEyqRggZZgYpPMUxdY1CYkZtARR)
 
-Channel Link: https://youtube.com/c/nesoacademy
+Channel Link: ![https://youtube.com/c/nesoacademy](https://youtube.com/c/nesoacademy)
 
 
 
@@ -135,7 +135,7 @@ A video, which I really enjoyed was "How I program C".
 
 Mr. Steenberg offers a lot of interesting approaches and tricks, which of some I adapted and used in programs myself.
 
-Link: https://youtu.be/443UNeGrFoM
+Link: ![https://youtu.be/443UNeGrFoM](https://youtu.be/443UNeGrFoM)
 
 
 #### freeCodeCamp tutorial
@@ -144,7 +144,7 @@ Being very popular for a good reason, freeCodeCamp is a decent choice, when tryi
 
 freeCodeCamp offers in-depth programming tutorials, which are also suited for beginners.
 
-Link: https://youtu.be/KJgsSFOSQv0
+Link: ![https://youtu.be/KJgsSFOSQv0](https://youtu.be/KJgsSFOSQv0)
 
 ---
 
