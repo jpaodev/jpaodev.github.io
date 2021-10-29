@@ -57,7 +57,7 @@ The website is divided into multiple subcategories, which contain articles about
 Using this website, you are going to learn many important concepts, by thinking about the solution and reading the explanation of each approach.
 
 <p align="center">
-  <img src="../images/C_GeeksForGeeks.png" />
+  <img class="blogpostimg" src="../images/C_GeeksForGeeks.png" />
 </p>
 
 The page is also very useful, in case you want to perform more research regarding a specific matter. As mentioned before, a sub category like "Pointers" contains multiple articles about concepts like "double pointers", which play a key role when building applications in C.
