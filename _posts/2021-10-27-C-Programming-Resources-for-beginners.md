@@ -1,3 +1,8 @@
+---
+layout: post
+title: C Programming Resources for beginners
+---
+
 Since I occassionally see people asking for C learning resources on Twitter and co. and also help out other students regarding that matter, I thought sharing my favourite sources here, might be useful for some people.
 
 The sources are going to be divided into different sections:

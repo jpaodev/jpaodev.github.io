@@ -1,3 +1,8 @@
+---
+layout: post
+title: Testarticle (Security)
+---
+
 # Test Article for the Security section
 
 ## Happy to announce the new security blogpost series
