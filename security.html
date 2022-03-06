@@ -1,0 +1,27 @@
+---
+layout: default
+---
+
+<div class="start">
+    Here you are going to find some information / blogposts regarding security topics.
+</div>
+<div class="posts">
+  {% for post in site.posts %}
+  {% if post.title contains "Security" %}
+    <article class="post">
+        <div style="position: relative; width: 250px;">
+            <div style="position: absolute; top: 0; right: 0; width: 100px; text-align:right;">
+                <!--{{ post.date | date: "%B %e, %Y" }}-->
+            </div>
+            <div style="position: absolute; bottom: 0; right: 0; width: 100px; text-align:right;">
+
+            </div>
+            <h2><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h2>
+          </div>  
+      
+      <!--<a href="{{ site.baseurl }}{{ post.url }}" class="read-more">Read article..</a>-->
+      <p>Written on: {{ post.date | date: "%B %e, %Y" }}</p>
+    </article>
+  {% endif %}
+  {% endfor %}
+</div>
