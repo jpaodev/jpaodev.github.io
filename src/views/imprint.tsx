@@ -16,7 +16,9 @@ const MyComponent: React.FC<Props> = ({ t }) => {
     <Container sx={{ p: 5 }}>
       <Typography variant="h3">{t("imprint.heading")}</Typography>
       {Object.values(imprintText).map((key) => (
-        <Typography variant="body1">{key}</Typography>
+        <Typography variant="body1" key={key}>
+          {key}
+        </Typography>
       ))}
     </Container>
   );

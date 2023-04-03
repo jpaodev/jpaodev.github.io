@@ -13,8 +13,10 @@ import LightModeIcon from "@mui/icons-material/LightMode";
 import { MenuItem } from "@mui/material";
 import { useTranslation } from "react-i18next";
 import { downloadCV } from "../utilities/download";
+import { HashLink } from "react-router-hash-link";
+import { Link } from "react-router-dom";
 
-const pages = ["Home", "About Me", "Experience", "Projects", "Blog", "CV"];
+const pages = ["Home", "Experience", "Projects", "Blog", "CV"];
 const textStyles = {
   mr: 2,
   display: { xs: "none", md: "flex" },
@@ -59,9 +61,13 @@ function ResponsiveAppBar(props: Props) {
     if (pageName == "CV") {
       downloadCV();
     } else if (pageName == "Blog") {
-      window.location.href = "/blog";
+      window.location.href = "/#/blog";
     } else {
-      window.location.href = "#" + pageName;
+      window.location.href = "../#/home#" + page;
+      const element = document.getElementById(page);
+      if (element) {
+        element.scrollIntoView();
+      }
     }
     setAnchorElNav(null);
   };

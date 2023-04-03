@@ -31,16 +31,17 @@ const ExperienceArea: React.FC<Props> = ({ t }) => {
         id="Experience"
       >
         {Object.keys(all_experiences).map((key) => (
-            <Grid item xs={12} sm={6} md={3} key={`${field}.${key}.id`}>
-              <PictureWithText
-                img={`${field}.${key}.icon`}
-                alt={`${field}.${key}.name`}
-                name={`${field}.${key}.name`}
-                description={`${field}.${key}.job_title`}
-                modalText={`${field}.${key}.description`}
-                technologies={all_experiences[key].technologies}
-              />
-            </Grid>
+          <Grid item xs={12} sm={6} md={3} key={`${field}.${key}.id`}>
+            <PictureWithText
+              key={`${field}.${key}.name`}
+              img={`${field}.${key}.icon`}
+              alt={`${field}.${key}.name`}
+              name={`${field}.${key}.name`}
+              description={`${field}.${key}.job_title`}
+              modalText={`${field}.${key}.description`}
+              technologies={all_experiences[key].technologies}
+            />
+          </Grid>
         ))}
       </Grid>
     </React.Fragment>

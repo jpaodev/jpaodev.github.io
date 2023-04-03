@@ -63,8 +63,8 @@ const PictureWithText: React.FC<Props> = ({
                 <Stack direction="row" spacing={1}>
                   {tags &&
                     tags.map((tag) => (
-                      <Grid item xs={6}>
-                        <Chip key={tag} label={tag} variant="outlined" />
+                      <Grid item xs={6} key={tag}>
+                        <Chip label={tag} variant="outlined" />
                       </Grid>
                     ))}
                 </Stack>

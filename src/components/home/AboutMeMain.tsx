@@ -30,14 +30,15 @@ const AboutMeMain: React.FC<Props> = ({ t }) => {
         alignSelf={"center"}
       >
         {Object.keys(all_about_mes).map((key) => (
-            <Grid item xs={12} sm={6} md={3} key={`${field}.${key}.id`}>
-              <PictureWithText
-                img={`${field}.${key}.icon`}
-                alt={`${field}.${key}.name`}
-                name={`${field}.${key}.name`}
-                description={`${field}.${key}.description`}
-              />
-            </Grid>
+          <Grid item xs={12} sm={6} md={3} key={`${field}.${key}.id`}>
+            <PictureWithText
+              key={`${field}.${key}.name`}
+              img={`${field}.${key}.icon`}
+              alt={`${field}.${key}.name`}
+              name={`${field}.${key}.name`}
+              description={`${field}.${key}.description`}
+            />
+          </Grid>
         ))}
       </Grid>
     </>

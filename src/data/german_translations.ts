@@ -33,7 +33,7 @@ export const german_translations = {
       id: 1,
       name: "Computer Scientist",
       description:
-        "Ich bin als Software Entwickler angestellt und strebe nebenbei den Bachelor of Engineering in Telekommunikationsinformatik an.",
+        "Ich bin als Software Entwickler angestellt und strebe nebenbei den Bachelor of Engineering in Telekommunikationsinformatik an. Im Studium beschäftige ich mich viel mit Konzepten der Computer Science.",
       icon: "assets/img/computer-science.svg",
     },
     student: {
@@ -47,7 +47,7 @@ export const german_translations = {
       id: 3,
       name: "Software Developer",
       description:
-        "Entwickeln von Software ist schon immer eine Leidenschaft von mir gewesen. Seitdem ich die Welt der Computer mit dem Windows 98 PC meines Vaters entdeckt habe, liebe ich die Thematik.",
+        "Entwickeln von Software ist schon immer eine Leidenschaft von mir gewesen. Seitdem ich die Welt der Computer mit dem Windows 98 PC meines Vaters entdeckt habe, beschäftige ich mich mit Soft- und Hardware.",
       icon: "assets/img/programming.svg",
     },
   },

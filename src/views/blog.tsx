@@ -44,10 +44,10 @@ const Blog: React.FC<Props> = () => {
   });
 
   const getLink = (path: string) => {
-    return "../blog/" + removeHashFromFilename(path);
+    return "../#/blog/" + removeHashFromFilename(path);
   };
   const openBlogpost = (path: string) => {
-    window.location.href = "../blog/" + getLink(path);
+    window.location.href = getLink(path);
   };
 
   /* eslint-disable react/no-array-index-key */
