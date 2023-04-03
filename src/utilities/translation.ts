@@ -4,7 +4,7 @@ import i18n from "i18next";
 import { useTranslation, initReactI18next } from "react-i18next";
 import { english_translations } from "../data/english_translations";
 import { german_translations } from "../data/german_translations";
-console.log(english_translations);
+
 export function initialize_translations() {
   i18n
     .use(initReactI18next) // passes i18n down to react-i18next
@@ -17,8 +17,8 @@ export function initialize_translations() {
           translation: english_translations,
         },
         de: {
-          translation: german_translations
-        }
+          translation: german_translations,
+        },
       },
       // lng: "en", // if you're using a language detector, do not define the lng option
       fallbackLng: "en",

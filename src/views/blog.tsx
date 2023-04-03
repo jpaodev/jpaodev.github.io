@@ -14,10 +14,7 @@ interface Props extends WithTranslation {}
 
 const Blog: React.FC<Props> = () => {
   const [blogposts, setBlogposts] = React.useState<Array<IPostInfo>>([]);
-  const [open, setOpen] = React.useState<boolean>(false);
-  function toggleModal() {
-    open ? setOpen(false) : setOpen(true);
-  }
+
   function removeHashFromFilename(filename: string) {
     return filename.replace(/^\/static\/media\/(.+?)\.[a-f0-9]+\./, "$1.");
   }
@@ -33,7 +30,7 @@ const Blog: React.FC<Props> = () => {
       markdownFiles.map((file: any) =>
         fetch(file)
           .then((res) => res.text())
-          .then((postString) => ({ post: postString, filePath: file }))
+          .then((postString) => ({ post: postString, filePath: getLink(file) }))
       )
     );
     setBlogposts(posts);
@@ -41,16 +38,12 @@ const Blog: React.FC<Props> = () => {
 
   React.useEffect(() => {
     loadBlogposts();
-  });
+  }, []);
 
   const getLink = (path: string) => {
-    return "../#/blog/" + removeHashFromFilename(path);
-  };
-  const openBlogpost = (path: string) => {
-    window.location.href = getLink(path);
+    return removeHashFromFilename(path);
   };
 
-  /* eslint-disable react/no-array-index-key */
   const post_infos = blogposts.map((post) => parsePost(post));
 
   return (

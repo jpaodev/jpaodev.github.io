@@ -27,7 +27,7 @@ interface Props extends WithTranslation {
   tags?: Array<string>;
 }
 
-const PictureWithText: React.FC<Props> = ({
+const ProjectCard: React.FC<Props> = ({
   t,
   img,
   alt,
@@ -42,6 +42,10 @@ const PictureWithText: React.FC<Props> = ({
   function toggleModal() {
     open ? setOpen(false) : setOpen(true);
   }
+  const loadBlogpost = (link: string) => {
+    window.location.href = `${window.location.href}/${link}`;
+  };
+
   const theme = useTheme();
   const imgLink = t(img) ? t(img) : "";
   return (
@@ -70,7 +74,7 @@ const PictureWithText: React.FC<Props> = ({
                 </Stack>
                 <Stack direction="row">
                   {tags ? (
-                    <Button size="small" href={t(link)}>
+                    <Button size="small" onClick={() => loadBlogpost(link)}>
                       Read
                     </Button>
                   ) : (
@@ -98,4 +102,4 @@ const PictureWithText: React.FC<Props> = ({
   );
 };
 
-export default withTranslation()(PictureWithText);
+export default withTranslation()(ProjectCard);

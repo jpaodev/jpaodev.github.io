@@ -26,11 +26,11 @@ const Blogpost: React.FC<BlogpostProps> = ({ t }) => {
 
   const loadBlogpost = async () => {
     const loadedFile = await import(`../data/blog/${blogpostId}`);
-    const loadedContent = await fetch(loadedFile.default).then((res) =>
-      res.text()
-    );
-    console.log(`../../data/blog/${blogpostId}`);
-    console.log(loadedContent);
+    // const loadedContent = await fetch(loadedFile.default).then((res) =>
+    const loadedContent = await fetch(
+      `https://raw.githubusercontent.com/jpaodev/jpaodev.github.io/master-new/src/data/blog/${blogpostId}`
+    ).then((res) => res.text());
+
     const parsedBlogpost = parsePost({
       post: loadedContent,
       filePath: blogpostId!.toString(),

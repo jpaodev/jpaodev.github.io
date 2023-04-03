@@ -65,6 +65,9 @@ function App() {
   const websiteTheme = createTheme({
     palette: {
       mode: darkmode ? "dark" : "light",
+      primary: {
+        main: "#571E4B",
+      },
     },
   });
   return (

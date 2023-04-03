@@ -8,15 +8,14 @@ import Menu from "@mui/material/Menu";
 import MenuIcon from "@mui/icons-material/Menu";
 import Container from "@mui/material/Container";
 import Button from "@mui/material/Button";
-import DarkModeIcon from "@mui/icons-material/DarkMode";
-import LightModeIcon from "@mui/icons-material/LightMode";
+import DarkmodeToggle from "./general/DarkmodeToggle";
 import { MenuItem } from "@mui/material";
 import { useTranslation } from "react-i18next";
 import { downloadCV } from "../utilities/download";
 import { HashLink } from "react-router-hash-link";
 import { Link } from "react-router-dom";
 
-const pages = ["Home", "Experience", "Projects", "Blog", "CV"];
+const pages = ["Home", "Blog", "CV"];
 const textStyles = {
   mr: 2,
   display: { xs: "none", md: "flex" },
@@ -58,15 +57,18 @@ function ResponsiveAppBar(props: Props) {
 
   const handleCloseNavMenu = (page: string) => {
     let pageName: string = page;
-    if (pageName == "CV") {
-      downloadCV();
-    } else if (pageName == "Blog") {
-      window.location.href = "/#/blog";
-    } else {
-      window.location.href = "../#/home#" + page;
-      const element = document.getElementById(page);
-      if (element) {
-        element.scrollIntoView();
+    if (pages.includes(pageName)) {
+      if (pageName == "CV") {
+        downloadCV();
+      } else if (pageName == "Blog") {
+        window.location.href = "/#/blog";
+      } else {
+        // Default nav link to home - anchor tags removed for now.
+        window.location.href = "../#/home";
+        const element = document.getElementById(page);
+        if (element) {
+          element.scrollIntoView();
+        }
       }
     }
     setAnchorElNav(null);
@@ -131,27 +133,10 @@ function ResponsiveAppBar(props: Props) {
                   style={{ height: 20 }}
                 />
               </MenuItem>
-              <Box sx={{}}>
-                {props.darkmode ? (
-                  <IconButton
-                    onClick={() => {
-                      // localStorage.setItem("darkmode", "false");
-                      props.setDarkmode(false);
-                    }}
-                  >
-                    <LightModeIcon />
-                  </IconButton>
-                ) : (
-                  <IconButton
-                    onClick={() => {
-                      // localStorage.setItem("darkmode", "true");
-                      props.setDarkmode(true);
-                    }}
-                  >
-                    <DarkModeIcon />
-                  </IconButton>
-                )}
-              </Box>
+              <DarkmodeToggle
+                darkmode={props.darkmode}
+                setDarkmode={props.setDarkmode}
+              />
             </Menu>
           </Box>
           <Typography
@@ -185,27 +170,10 @@ function ResponsiveAppBar(props: Props) {
                 style={{ height: 20 }}
               />
             </Button>
-            {props.darkmode ? (
-              <Button
-                sx={{ color: "orange" }}
-                onClick={() => {
-                  // localStorage.setItem("darkmode", "false");
-                  props.setDarkmode(false);
-                }}
-              >
-                <LightModeIcon className="dropdown-menu-end " />
-              </Button>
-            ) : (
-              <Button
-                sx={{ color: "black" }}
-                onClick={() => {
-                  // localStorage.setItem("darkmode", "true");
-                  props.setDarkmode(true);
-                }}
-              >
-                <DarkModeIcon className="dropdown-menu-end " />
-              </Button>
-            )}
+            <DarkmodeToggle
+              darkmode={props.darkmode}
+              setDarkmode={props.setDarkmode}
+            />
           </Box>
         </Toolbar>
       </Container>
