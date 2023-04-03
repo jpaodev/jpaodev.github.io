@@ -28,7 +28,11 @@ const Blog: React.FC<Props> = () => {
 
     const posts: Array<IPostInfo> = await Promise.all(
       markdownFiles.map((file: any) =>
-        fetch(file)
+        fetch(
+          `https://raw.githubusercontent.com/jpaodev/jpaodev.github.io/master-new/src/data/blog/${getLink(
+            file
+          )}`
+        )
           .then((res) => res.text())
           .then((postString) => ({ post: postString, filePath: getLink(file) }))
       )
