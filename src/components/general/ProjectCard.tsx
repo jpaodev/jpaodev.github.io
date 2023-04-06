@@ -46,13 +46,16 @@ const ProjectCard: React.FC<Props> = ({
     window.location.href = `${window.location.href}/${link}`;
   };
 
+  const handleCardClick = () => {
+    tags ? loadBlogpost(link) : toggleModal();
+  }
   const theme = useTheme();
   const imgLink = t(img) ? t(img) : "";
   return (
     <>
       <Box margin={3}>
         <Stack spacing={2}>
-          <Card sx={{ maxWidth: 345 }}>
+          <Card sx={{ maxWidth: 345, ':hover':{boxShadow: 20} }} onClick={handleCardClick}>
             <CardMedia sx={{ height: 140 }} image={imgLink} title={alt} />
             <CardContent>
               <Typography gutterBottom variant="h5" component="div">
@@ -73,15 +76,7 @@ const ProjectCard: React.FC<Props> = ({
                     ))}
                 </Stack>
                 <Stack direction="row">
-                  {tags ? (
-                    <Button size="small" onClick={() => loadBlogpost(link)}>
-                      Read
-                    </Button>
-                  ) : (
-                    <Button size="small" onClick={toggleModal}>
-                      Learn More
-                    </Button>
-                  )}
+                  
                 </Stack>
               </Stack>
             </CardActions>

@@ -13,7 +13,6 @@ const modalStyle = {
   border: "2px solid #000",
   boxShadow: 24,
   p: 4,
-  overflow: "scroll",
   outline: "none",
 };
 
@@ -57,7 +56,7 @@ const InfoModal: React.FC<Props> = ({
           <Typography variant="body2">
             {t("general.modal.usedTechnologies")}
           </Typography>
-          <Stack direction={"row"} spacing={1}>
+          <Stack direction={"row"} spacing={1} sx={{overflow: "auto"}}>
             {technologies &&
               technologies.map((value) => (
                 <Box

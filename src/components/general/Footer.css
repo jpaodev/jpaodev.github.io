@@ -1,4 +1,17 @@
 a {
   font-style: normal;
   text-decoration: none;
+  color: "#571E48"
+}
+
+a:link {
+  color: "#571E48"
+}
+
+a:hover {
+  color: "gray"
+}
+
+a:visited {
+  color: "#571E48"
 }
