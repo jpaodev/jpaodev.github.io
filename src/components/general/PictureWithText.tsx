@@ -25,20 +25,27 @@ const PictureWithText: React.FC<Props> = ({
   function toggleModal() {
     open ? setOpen(false) : setOpen(true);
   }
-  const theme = useTheme();
+
   const imgLink = t(img) ? t(img) : "";
+  const imgAlt = t(alt) ? t(alt) : "";
+
   return (
     <Box margin={3} key={name}>
       <Stack spacing={2}>
         <Box sx={{ display: "flex", justifyContent: "center" }}>
           <Avatar
-            alt={alt}
+            alt={imgAlt}
             src={imgLink}
             sx={{
               width: 150,
               height: 150,
               alignItems: "center",
               justifyContent: "center",
+              ":hover": {
+                boxShadow: 20,
+                opacity: modalText ? 0.5 : 1,
+                cursor: modalText ? "pointer" : "default",
+              },
             }}
             onClick={toggleModal}
           />

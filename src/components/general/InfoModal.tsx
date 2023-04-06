@@ -1,20 +1,14 @@
 import React from "react";
-import { Stack, Typography, Box, Modal, Divider } from "@mui/material";
+import {
+  Stack,
+  Typography,
+  Box,
+  Modal,
+  Divider,
+  useTheme,
+} from "@mui/material";
 import { withTranslation, WithTranslation } from "react-i18next";
 import ReactMarkdown from "react-markdown";
-
-const modalStyle = {
-  position: "absolute" as "absolute",
-  top: "50%",
-  left: "50%",
-  transform: "translate(-50%, -50%)",
-  width: "90%",
-  bgcolor: "background.paper",
-  border: "2px solid #000",
-  boxShadow: 24,
-  p: 4,
-  outline: "none",
-};
 
 interface Props extends WithTranslation {
   open: any;
@@ -36,6 +30,24 @@ const InfoModal: React.FC<Props> = ({
   modalText,
   isMarkdown,
 }) => {
+  const theme = useTheme();
+
+  const modalStyle = {
+    position: "absolute" as "absolute",
+    top: "50%",
+    left: "50%",
+    transform: "translate(-50%, -50%)",
+    width: "90%",
+    [theme.breakpoints.up("md")]: {
+      width: "70% !important",
+    },
+    bgcolor: "background.paper",
+    border: "2px solid #000",
+    boxShadow: 24,
+    p: 4,
+    outline: "none",
+  };
+
   return (
     <Modal
       open={open}
@@ -56,7 +68,7 @@ const InfoModal: React.FC<Props> = ({
           <Typography variant="body2">
             {t("general.modal.usedTechnologies")}
           </Typography>
-          <Stack direction={"row"} spacing={1} sx={{overflow: "auto"}}>
+          <Stack direction={"row"} spacing={1} sx={{ overflow: "auto" }}>
             {technologies &&
               technologies.map((value) => (
                 <Box
